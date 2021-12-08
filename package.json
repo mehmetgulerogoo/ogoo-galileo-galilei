@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/mehmetgulerogoo/ogoo-galileo-galilei/issues"
   },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.37.5"
+  },
   "homepage": "https://github.com/mehmetgulerogoo/ogoo-galileo-galilei#readme"
 }
