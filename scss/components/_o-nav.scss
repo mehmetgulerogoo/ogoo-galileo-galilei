@@ -1,0 +1,52 @@
+.o-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid $main-border-color;
+  padding: 0 10px;
+
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+
+  &__item {
+    margin-right: 50px;
+    flex: 0 0 auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $main-text-color;
+    height: 100%;
+    padding: 0 10px;
+    border-bottom: 1px solid transparent;
+    transition: all .15s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  &__link--active {
+    color: $primary-color;
+    font-weight: $o-font-weight-bold;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  //scrollable
+  &--scrollable {
+    overflow: hidden;
+  }
+
+  &--scrollable &__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}

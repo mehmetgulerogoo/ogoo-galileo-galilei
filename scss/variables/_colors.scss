@@ -1,0 +1,33 @@
+// Colors
+$color-main-green: #43A765;
+$color-main-black: #201F1E;
+$color-main-white: #FFFFFF;
+$color-main-orange: #ff6602;
+$color-main-blue: #8ecae6;
+$color-main-red: #e63946;
+$color-main-gray: #909399;
+$color-main-white: #ffffff;
+$color-main-dark: #001219;
+$color-main-soft-gray: #dcdfe6;
+$color-main-disable-gray: #d4d4d4;
+
+$primary-color: $color-main-orange;
+$secondary-color: $color-main-black;
+$success-color: $color-main-green;
+$danger-color: $color-main-red;
+$warning-color: $color-main-orange;
+$info-color: $color-main-blue;
+$default-color: $color-main-gray;
+$main-text-color: $color-main-dark;
+$main-border-color: $color-main-soft-gray;
+$disabled-color: $color-main-disable-gray;
+
+$ogoo-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $success-color,
+  "danger": $danger-color,
+  "warning": $warning-color,
+  "info": $info-color,
+  "white": $color-main-white
+);

@@ -1,0 +1,94 @@
+.o-modal {
+
+  &__dialog {
+  }
+
+  &__content {
+    border-color: $main-border-color;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  &__title {
+  }
+
+  &__close {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  &__close .o-icon {
+    font-size: 24px;
+  }
+
+  &__body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 16px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 16px;
+  }
+
+  &__footer .o-btn + .o-btn {
+    margin-left: 8px;
+  }
+
+  //large modal
+  &--large &__dialog {
+    max-width: 800px;
+  }
+
+  //video
+  &--video &__content{
+    border-radius: 0;
+    border: none;
+  }
+
+  &--video &__body {
+    padding: 0;
+  }
+
+  &--video &__video-content {
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    &:before {
+      display: block;
+      content: "";
+      padding-top: 56.25%;
+    }
+  }
+
+  &--video &__video-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  &--video &__close {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    z-index: 99;
+  }
+}

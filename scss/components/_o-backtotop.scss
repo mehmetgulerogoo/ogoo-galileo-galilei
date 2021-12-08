@@ -1,0 +1,30 @@
+.o-backtotop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid $primary-color;
+  background-color: lighten($primary-color, 40%);
+  color: $primary-color;
+  transition: all .15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $color-main-white;
+  }
+
+  .o-icon {
+    font-size: 20px;
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}

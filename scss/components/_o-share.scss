@@ -1,0 +1,51 @@
+.o-share {
+  height: 60px;
+  cursor: pointer;
+  background-color: lighten($primary-color, 40%);
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px;
+    background-color: $primary-color;
+    display: block;
+    color: $color-main-white;
+    transition: all 1s;
+  }
+
+  &:hover span {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  &__icons {
+    padding: 0 20px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    .o-icon {
+      margin: 5px;
+      font-size: 22px;
+      padding: 0 10px;
+      font-weight: $o-font-weight-medium;
+      color: $primary-color;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+}

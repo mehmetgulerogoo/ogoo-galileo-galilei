@@ -1,0 +1,39 @@
+.o-alert {
+  position: relative;
+  border: 1px solid $default-color;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: lighten($default-color, 40%);
+
+  // alternate colors
+  @each $color, $value in $ogoo-colors {
+    &--#{$color} {
+      border-color: $value;
+      background-color: lighten($value, 40%);
+      color: set-color(lighten($value, 40%));
+
+      &__close-button .o-icon {
+        color: $value;
+      }
+    }
+  }
+
+  &--closeable {
+    padding-right: 40px;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    padding: 0;
+    margin-top: 2px;
+  }
+
+  &__close-button .o-icon {
+    font-size: 24px;
+    color: $default-color;
+  }
+}

@@ -1,0 +1,86 @@
+.o-hero {
+  position: relative;
+  height: 250px;
+  margin-bottom: 16px;
+
+  @include atMedium {
+    height: 400px;
+  }
+
+  @include atLarge {
+    height: 500px;
+  }
+
+  &__text-content {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 48px;
+    color: $color-main-white;
+
+    @include atMedium {
+      font-size: 52px;
+      line-height: 80px;
+      font-weight: $o-font-weight-bold;
+    }
+  }
+
+  &__description {
+    color: $color-main-white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include atMedium {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: left;
+    }
+  }
+
+  //image
+  &--image {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  //gradient
+  &--gradient {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  }
+
+  //scroll-icon
+  &--scroll &__title, &--scroll &__description {
+    padding-right: 80px;
+  }
+
+  &__scroll-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__scroll-text {
+    display: inline-block;
+    color: $color-main-white;
+    animation: scrollDown 2.5s infinite;
+  }
+
+  &__scroll-icon .o-icon {
+    font-size: 40px;
+  }
+}

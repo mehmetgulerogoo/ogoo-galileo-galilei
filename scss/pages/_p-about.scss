@@ -1,0 +1,21 @@
+.p-about {
+
+
+  &__featured {
+    display: flex;
+    align-items: center;
+
+    &__image {
+
+      max-width: 350px;
+
+    }
+  }
+
+  &__follow-us {
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+  }
+
+}

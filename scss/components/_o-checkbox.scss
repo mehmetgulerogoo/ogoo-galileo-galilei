@@ -1,0 +1,92 @@
+.o-checkbox {
+  position: relative;
+  min-height: 24px;
+  margin-bottom: 16px;
+
+  &__label a {
+    font-weight: $o-font-weight-medium;
+    color: $primary-color;
+    transition: all .15s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: darken($primary-color, 10%);
+    }
+  }
+
+  &__label-text {
+    user-select: none;
+  }
+
+  &__input:not(:checked),
+  &__input:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &__input:not(:checked) + label,
+  &__input:checked + label {
+    position: relative;
+    padding-left: 32px;
+    min-height: 24px;
+    padding-top: 3px;
+    cursor: pointer;
+  }
+
+
+  &__input:not(:checked) + label .o-checkbox__label-input,
+  &__input:checked + label .o-checkbox__label-input {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $main-border-color;
+    border-radius: 4px;
+    background-color: $color-main-white;
+  }
+
+
+  &__input:not(:checked) + label:after,
+  &__input:checked + label:after {
+    content: $o-icon--check;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    font-size: 1rem;
+    line-height: 0.8;
+    color: $primary-color;
+    transition: all .1s;
+    font-family: $icomoon-font-family;
+  }
+
+  /* checked mark aspect changes */
+  &__input:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &__input:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  // disabled
+  &__input:disabled:not(:checked) + label .o-checkbox__label-input,
+  &__input:disabled:checked + label .o-checkbox__label-input {
+    box-shadow: none;
+    background-color: $disabled-color;
+    cursor: inherit;
+  }
+
+  &__input:disabled:checked + label:after {
+    color: $color-main-white;
+    cursor: inherit;
+  }
+
+  &__input:disabled + label {
+    color: $disabled-color;
+    cursor: inherit;
+  }
+}

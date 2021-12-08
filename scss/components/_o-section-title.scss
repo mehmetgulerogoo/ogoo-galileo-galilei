@@ -1,0 +1,29 @@
+.o-section-title {
+  h1, h2 {
+    font-weight: $o-font-weight-normal;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  h1 span, h2 span {
+    font-weight: $o-font-weight-normal
+  }
+
+  h1 strong, h2 strong {
+    font-weight: $o-font-weight-bold;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

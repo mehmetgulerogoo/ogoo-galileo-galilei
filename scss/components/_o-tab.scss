@@ -1,0 +1,62 @@
+.o-tab {
+  &__nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $main-border-color;
+    padding: 0 10px;
+    margin-bottom: 16px;
+  }
+
+  //scrollable tab nav
+  &__nav-container--scrollable {
+    overflow: hidden;
+  }
+
+  &__nav-container--scrollable &__nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  &__nav {
+    display: flex;
+    height: 100%;
+    border-bottom: none;
+  }
+
+  &__item {
+    margin-right: 50px;
+    flex: 0 0 auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    color: $main-text-color;
+    transition: all .15s ease-in-out;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  &__button.active {
+    color: $primary-color;
+    font-weight: $o-font-weight-bold;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  &__content {
+
+  }
+
+  &__pane {
+
+  }
+}

@@ -1,0 +1,63 @@
+.o-ticket-card {
+  background-color: lighten($primary-color, 40%);
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+
+  &__date {
+    flex: 2;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  &__info {
+    flex: 5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 0;
+      height: 80%;
+      width: 1px;
+      border-left: 2px dashed $secondary-color;
+    }
+
+    * {
+      margin-bottom: 10px;
+    }
+
+    &__oval-leftTop {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background: $color-main-white;
+      border-radius: 50%;
+      left: -15px;
+      top: -15px;
+    }
+
+    &__oval-leftBottom {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background: $color-main-white;
+      border-radius: 50%;
+      left: -15px;
+      bottom: -25px;
+    }
+  }
+
+  .o-btn {
+    flex: 2;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

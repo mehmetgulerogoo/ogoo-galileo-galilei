@@ -1,0 +1,13 @@
+.o-icon {
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+
+  @each $color, $value in $ogoo-colors {
+    &--#{$color} {
+      color: $value;
+    }
+  }
+}

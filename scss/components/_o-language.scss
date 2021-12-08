@@ -1,0 +1,47 @@
+.o-language {
+  max-width: 180px;
+  cursor: pointer;
+
+  &__popover {
+    margin: 10px 0 0;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: lighten($primary-color, 20%);
+    display: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 15px;
+      width: 15px;
+      left: 5px;
+      top: -4px;
+      border-radius: 2px;
+      background: lighten($primary-color, 20%);
+      transform: rotate(45deg);
+    }
+
+    ul {
+      li {
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      li:hover {
+        background-color: lighten($primary-color, 40%);
+      }
+    }
+
+  }
+
+  &:hover {
+    .o-language__popover {
+      display: block;
+    }
+  }
+
+  .o-icon {
+    margin-right: 10px;
+  }
+}

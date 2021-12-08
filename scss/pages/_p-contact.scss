@@ -1,0 +1,33 @@
+.p-contact {
+
+  &__form-title {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  &__form {
+    margin: 10px 0;
+  }
+
+  &__address {
+    margin: 10px 0;
+  }
+
+  &__follow-us {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__google-map {
+    height: 400px;
+    width: 100%;
+  }
+
+  .o-validation__message {
+    display: none;
+  }
+
+  .o-form-group {
+    margin-bottom: 35px;
+  }
+}

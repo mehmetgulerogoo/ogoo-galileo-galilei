@@ -1,0 +1,33 @@
+.o-presentation {
+
+  &__header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__header__img {
+    width: 100px;
+  }
+
+  &__header__title {
+    font-weight: 700;
+  }
+
+  &__header .o-btn {
+    margin-top: 10px;
+    display: inline-flex;
+  }
+
+  &__list {}
+
+  &__item {
+    border-bottom: 1px solid #eee;
+  }
+
+  &__link {
+    padding: 10px 0;
+    display: flex;
+    font-size: 14px;
+    color: $color-main-black;
+  }
+}

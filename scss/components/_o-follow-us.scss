@@ -1,0 +1,32 @@
+.o-follow-us {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__icons {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+
+    .o-icon {
+      margin: 5px;
+      cursor: pointer;
+      background-color: lighten($primary-color, 30%);
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: $o-font-weight-light;
+      border: 1px solid black;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: lighten($primary-color, 40%);
+      }
+    }
+  }
+
+}

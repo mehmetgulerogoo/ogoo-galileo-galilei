@@ -1,0 +1,29 @@
+.o-tag {
+  display: inline-block;
+  padding: 4px 6px;
+  white-space: nowrap;
+  border-radius: 4px;
+  margin-bottom: 5px;
+
+  i {
+    cursor: pointer;
+  }
+
+  //add modifier for every color
+  @each $color, $value in $ogoo-colors {
+    &--#{$color} {
+      background-color: lighten($value, 40%);
+      color: $value;
+      border: 2px solid $value;
+
+      i:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: lighten($value, 60%);
+      }
+    }
+
+  }
+
+
+}

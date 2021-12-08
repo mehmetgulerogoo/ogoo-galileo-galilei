@@ -1,0 +1,55 @@
+.o-profile-card {
+  max-width: 320px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  &__head {
+    padding: 20px;
+    width: 100%;
+    background-color: lighten($primary-color, 20%);
+    text-align: center;
+
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    * {
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      color: $color-main-gray;
+    }
+  }
+
+  &__foot {
+    font-size: 28px;
+    font-weight: $o-font-weight-normal;
+    border: none;
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+    background-color: lighten($primary-color, 20%);
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten($primary-color, 30%);
+    }
+  }
+
+}

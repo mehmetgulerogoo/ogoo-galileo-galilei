@@ -1,0 +1,65 @@
+.o-site-header {
+  position: relative;
+  background-color: $color-main-soft-gray;
+  height: 80px;
+  z-index: 99;
+
+  & .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__logo img {
+    height: 24px;
+
+    @include atMedium {
+      height: 40px;
+    }
+
+    @include atLarge {
+      height: 48px;
+    }
+  }
+
+  &__right {
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav-item {
+    margin-right: 20px;
+    flex: 0 0 auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    color: $main-text-color;
+    height: 100%;
+    padding: 0 10px;
+    transition: all .15s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  &__nav-item--active &__nav-link {
+    color: $primary-color;
+    font-weight: $o-font-weight-bold;
+  }
+}

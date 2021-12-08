@@ -1,0 +1,76 @@
+.o-form-group {
+  position: relative;
+  margin-bottom: 16px;
+
+  &__label {
+    margin-bottom: 8px;
+  }
+
+  //with Icon
+  &__icon .o-icon {
+    font-size: 20px;
+  }
+
+  //icon right
+  &--icon-right &__icon {
+    position: absolute;
+    margin-top: 5px;
+    top: 50%;
+    right: 12px;
+  }
+
+  &--icon-right .o-input {
+    padding-right: 40px;
+  }
+
+  //icon left
+  &--icon-left &__icon {
+    position: absolute;
+    margin-top: 5px;
+    top: 50%;
+    left: 12px;
+  }
+
+  &--icon-left .o-input {
+    padding-left: 40px;
+  }
+
+  //password
+  &--password .o-icon {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  //search
+  &--search &__icon--button {
+    position: absolute;
+    margin-top: 5px;
+    top: 50%;
+    right: 12px;
+    padding: 0;
+  }
+
+  &--search .o-input {
+    padding-right: 40px;
+  }
+
+  //datepicker
+  &--datepicker &__icon {
+    position: absolute;
+    margin-top: 5px;
+    top: 50%;
+    right: 12px;
+    cursor: pointer;
+  }
+
+  &--datepicker .o-input {
+    padding-right: 40px;
+  }
+
+  //required
+  &--is-required &__label:after {
+    content: "*";
+    color: $danger-color;
+    padding-left: 4px;
+  }
+}

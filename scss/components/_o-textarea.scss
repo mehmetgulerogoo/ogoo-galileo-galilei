@@ -1,0 +1,22 @@
+.o-textarea {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: $color-main-white;
+  border-radius: 4px;
+  border: 1px solid $color-main-soft-gray;
+  color: $main-text-color;
+  font-size: inherit;
+  height: 100px;
+  line-height: 25px;
+  outline: none;
+  transition: all .15s ease-in-out;
+  width: 100%;
+  resize: none;
+
+  &--large {
+    padding: 12px;
+    height: 300px;
+    line-height: 35px;
+    font-size: 1.25rem;
+  }
+}

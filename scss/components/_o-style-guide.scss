@@ -1,0 +1,74 @@
+.o-style-guide {
+  padding-bottom: 100px;
+
+  &__back {
+    font-weight: bold;
+    padding: 15px 0;
+  }
+
+  &__back-link {
+    color: $primary-color;
+
+    &:hover {
+      color: darken($primary-color, 5%);
+    }
+
+  }
+
+  &__header {
+    padding: 30px;
+    text-align: center;
+  }
+
+  &__header__img {
+    width: 100px;
+  }
+
+  &__logo {
+    max-width: 150px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle--fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__description {
+    padding: 0 15px;
+  }
+
+  &__card {
+    background-color: $primary-color;
+    margin-bottom: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .5;
+  }
+
+  &__card--active {
+    opacity: 1;
+  }
+
+  &__card__link {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+}

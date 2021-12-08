@@ -1,0 +1,42 @@
+.o-price-card {
+  border-radius: 25px;
+  padding: 35px;
+  max-width: 375px;
+  background-color: lighten($primary-color, 40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__head {
+    padding: 20px 0;
+  }
+
+  &__price {
+    padding: 20px 0;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li:first-of-type {
+      border-top: 2px solid white;
+    }
+
+    li {
+      width: 80%;
+      padding: 15px 0;
+      border-bottom: 2px solid white;
+      text-align: center;
+    }
+  }
+
+
+  .o-btn {
+    margin-top: 30px;
+    width: 60%;
+  }
+}

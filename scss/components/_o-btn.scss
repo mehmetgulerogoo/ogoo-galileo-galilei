@@ -1,0 +1,112 @@
+.o-btn {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: $default-color;
+  color: $color-main-white;
+  transition: all .15s ease-in-out;
+
+  &:hover {
+    color: $color-main-white;
+  }
+
+  // alternate colors
+  @each $color, $value in $ogoo-colors {
+    &--#{$color} {
+      background-color: $value;
+      color: set-color($value);
+
+      &:hover {
+        background-color: darken($value, 10%);
+      }
+    }
+  }
+
+  //ghost
+  &--ghost {
+    background-color: transparent;
+    color: $primary-color;
+
+    &:hover {
+      color: darken($primary-color, 5%);
+    }
+  }
+
+  // ghost alternate colors
+  @each $color, $value in $ogoo-colors {
+    &--ghost-#{$color} {
+      color: $value;
+
+      &:hover {
+        color: darken($value, 5%);
+      }
+    }
+  }
+
+  // bordered
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid;
+  }
+
+  // bordered alternate colors
+  @each $color, $value in $ogoo-colors {
+    &--bordered-#{$color} {
+      border-color: $value;
+      color: $value;
+
+      &:hover {
+        background-color: $value;
+        color: set-color($value);
+      }
+    }
+  }
+
+  //with Icon
+  &--icon-right {
+  }
+
+  &--icon-right .o-icon {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  &--icon-left {
+  }
+
+  &--icon-left .o-icon {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  &--just-icon {
+  }
+
+  // sizes
+  &--large {
+    padding: 8px 16px;
+    font-size: 20px;
+  }
+
+  &--small {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  // disabled
+  &:disabled {
+    pointer-events: none;
+    opacity: .65;
+  }
+
+}

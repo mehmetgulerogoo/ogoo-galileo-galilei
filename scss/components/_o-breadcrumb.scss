@@ -1,0 +1,31 @@
+.o-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+
+  &__item {
+    margin-right: 8px;
+
+    &:before {
+      float: left;
+      padding-right: 8px;
+      color: $main-border-color;
+      content: "/";
+    }
+
+    &:first-of-type:before {
+      float: none;
+      padding-right: 0;
+      content: "";
+    }
+  }
+
+  &__item a {
+    color: $default-color;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

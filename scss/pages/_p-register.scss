@@ -1,0 +1,29 @@
+.p-register {
+
+  &__form-title {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  &__form {
+    margin: 10px 0;
+  }
+
+  .o-validation__message {
+    display: none;
+  }
+
+  .o-form-group {
+    margin-bottom: 35px;
+  }
+
+  .o-btn {
+    a {
+      &:hover {
+        color: $color-main-white;
+      }
+
+      color: $primary-color;
+    }
+  }
+}

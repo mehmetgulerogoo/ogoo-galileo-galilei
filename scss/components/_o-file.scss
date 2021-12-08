@@ -1,0 +1,19 @@
+.o-file {
+  display: flex;
+  align-items: center;
+  background-color: lighten($primary-color, 40%);
+  max-width: 280px;
+  border-radius: 4px;
+
+  &__input::-webkit-file-upload-button {
+    border: none;
+    background: $primary-color;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 4px 0 0 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

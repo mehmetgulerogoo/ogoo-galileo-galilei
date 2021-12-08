@@ -1,0 +1,51 @@
+.o-list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+
+  &__item {
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    border-bottom: 1px solid $main-border-color;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &--links &__item {
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      background-color: lighten($color-main-soft-gray, 10%);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    color: $main-text-color;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &--bordered {
+    border: 1px solid $main-border-color;
+    border-radius: 4px;
+  }
+
+  &--bordered &__item {
+
+    &:first-of-type {
+      border-radius: 4px 4px 0 0;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0 4px 4px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.o-site-footer {
+  position: relative;
+  background-color: $color-main-soft-gray;
+  z-index: 99;
+  padding: 20px 0;
+
+  & .container {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    @include atMedium {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    text-align: center;
+    order: 1;
+    margin-bottom: 16px;
+
+    @include atMedium {
+      width: 25%;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__logo img {
+    height: 48px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 16px;
+    order: 2;
+
+    @include atMedium {
+      justify-content: flex-end;
+      width: 75%;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__nav-item {
+    margin-right: 16px;
+    flex: 0 0 auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    height: 100%;
+
+    &:hover, &:focus {
+      color: $primary-color;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    order: 3;
+    text-align: center;
+    margin-bottom: 16px;
+
+    @include atMedium {
+      width: 75%;
+      margin-bottom: 0;
+      justify-content: flex-start;
+    }
+  }
+
+  &__social-link {
+    margin-right: 10px;
+    flex: 0 0 auto;
+    color: $primary-color;
+    font-size: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover, &:focus {
+      color: $primary-color;
+    }
+  }
+
+  &__copyright {
+    font-weight: $o-font-weight-light;
+    font-size: 14px;
+    text-align: center;
+    order: 4;
+    width: 100%;
+
+    @include atMedium {
+      text-align: right;
+      width: 25%;
+    }
+  }
+}

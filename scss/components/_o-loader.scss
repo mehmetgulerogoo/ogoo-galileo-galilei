@@ -1,0 +1,9 @@
+.o-loader {
+  border: 8px solid lighten($primary-color, 40%);
+  border-top: 8px solid $primary-color;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+

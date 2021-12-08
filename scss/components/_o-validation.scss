@@ -1,0 +1,87 @@
+.o-validation {
+  position: relative;
+
+  &--error .o-input {
+    border-color: $danger-color;
+    background-color: lighten($danger-color, 40%);
+  }
+
+  &--error .o-textarea {
+    border-color: $danger-color;
+    background-color: lighten($danger-color, 40%);
+  }
+
+  &--success .o-input {
+    border-color: $success-color;
+    background-color: lighten($success-color, 40%);
+  }
+
+  &--success .o-textarea {
+    border-color: $success-color;
+    background-color: lighten($success-color, 40%);
+  }
+
+  &__icon {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+
+  &--error .o-validation__icon .o-icon {
+    color: $danger-color;
+  }
+
+  &--success .o-validation__icon .o-icon {
+    color: $success-color;
+  }
+
+  //for checkbox
+  &--error-checkbox &__message,
+  &--success-checkbox &__message {
+    padding-left: 30px;
+  }
+
+  &--error-checkbox .o-checkbox__input:not(:checked) + label .o-checkbox__label-input,
+  &--error-checkbox .o-checkbox__input:checked + label .o-checkbox__label-input {
+    border-color: $danger-color;
+    background-color: lighten($danger-color, 40%);
+  }
+
+  &--success-checkbox .o-checkbox__input:not(:checked) + label .o-checkbox__label-input,
+  &--success-checkbox .o-checkbox__input:checked + label .o-checkbox__label-input {
+    border-color: $success-color;
+    background-color: lighten($success-color, 40%);
+  }
+
+  &--error-checkbox .o-checkbox__input:not(:checked) + label:after,
+  &--error-checkbox .o-checkbox__input:checked + label:after {
+    color: $danger-color;
+  }
+
+  &--success-checkbox .o-checkbox__input:not(:checked) + label:after,
+  &--success-checkbox .o-checkbox__input:checked + label:after {
+    color: $success-color;
+  }
+
+  //for select
+  &--error .o-select {
+    border-color: $danger-color;
+    background-color: lighten($danger-color, 40%);
+  }
+
+  &--success .o-select {
+    border-color: $success-color;
+    background-color: lighten($success-color, 40%);
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    bottom: -24px;
+    left: 4px;
+    height: 16px;
+    color: $default-color;
+  }
+}

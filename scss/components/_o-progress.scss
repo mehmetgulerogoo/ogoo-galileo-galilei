@@ -1,0 +1,21 @@
+.o-progress {
+  height: 8px;
+  background-color: $main-border-color;
+  overflow: hidden;
+  border-radius: 6px;
+
+  @include atMedium {
+    height: 12px;
+  }
+
+  &__bar {
+    height: 8px;
+    background-color: $primary-color;
+    transition: width 0.6s ease;
+    border-radius: 6px;
+
+    @include atMedium {
+      height: 12px;
+    }
+  }
+}
