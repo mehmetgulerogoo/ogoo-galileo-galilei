@@ -33,11 +33,18 @@
     margin-bottom: 30px;
   }
 
-  &__subtitle {
+  &__content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-top: 1px solid #ddd;
     padding-top: 30px;
     margin-top: 30px;
     margin-bottom: 15px;
+  }
+
+  &__subtitle {
+
   }
 
   &__subtitle--fluid {
@@ -71,4 +78,11 @@
     }
   }
 
+  .o-code-highlight {
+   display: none;
+  }
+
+  .o-code-highlight.active {
+    display: block;
+  }
 }
