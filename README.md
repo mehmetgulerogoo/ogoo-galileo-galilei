@@ -5,7 +5,7 @@
     <img src="images/logo.png" alt="Logo" width="106" height="80">
   </a> 
 
-<h3 align="center">OGOO Galileo Galilei</h3>
+<h3 align="center">Galileo Galilei</h3>
 
   <p align="center">
       Main style repository used by other boilerplate projects
@@ -38,7 +38,7 @@
 
 This project is used to manage style files of other boilerplate projects from one place.
 The change made to the package created with this project directly affects the projects used.
-It is actively used in [OGOO Nikola Tesla](https://github.com/mehmetgulerogoo/ogoo-nikola-tesla) and [OGOO Napoleon Bonaparte](https://github.com/mehmetgulerogoo/ogoo-napoleon-bonaparte) projects.
+It is actively used in [Nikola Tesla](https://github.com/mehmetgulerogoo/ogoo-nikola-tesla) and [Napoleon Bonaparte](https://github.com/mehmetgulerogoo/ogoo-napoleon-bonaparte) projects.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,6 +82,6 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-In this project, it is actively used in [OGOO Nikola Tesla](https://github.com/mehmetgulerogoo/ogoo-nikola-tesla) and [OGOO Napoleon Bonaparte](https://github.com/mehmetgulerogoo/ogoo-napoleon-bonaparte) projects. You can see how it is used in these projects.
+In this project, it is actively used in [Nikola Tesla](https://github.com/mehmetgulerogoo/ogoo-nikola-tesla) and [Napoleon Bonaparte](https://github.com/mehmetgulerogoo/ogoo-napoleon-bonaparte) projects. You can see how it is used in these projects.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
