@@ -18,13 +18,14 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-autoprefixer": "^8.0.0",
     "sass": "^1.37.5"
   },
   "dependencies": {
-    "bootstrap": "^5.1.0"
+    "bootstrap": "^5.1.0",
+    "swiper": "^7.4.1"
   },
   "homepage": "https://github.com/mehmetgulerogoo/ogoo-galileo-galilei#readme"
 }
