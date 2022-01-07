@@ -1,0 +1,79 @@
+@mixin animated-background {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: placeHolderWave;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+.o-content-placeholder {
+  &__person-image {
+    @include animated-background;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+  &__person-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+  }
+
+  &__title {
+    @include animated-background;
+    width: 200px;
+    height: 27px;
+    margin-bottom: 10px;
+  }
+
+  &__semi-title {
+    @include animated-background;
+    width: 125px;
+    height: 27px;
+    margin-bottom: 3px;
+  }
+
+  &__text {
+    @include animated-background;
+    width: 100px;
+    height: 21px;
+  }
+
+  &__description-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__description-item {
+    @include animated-background;
+    width: 100%;
+    height: 18px;
+    margin-bottom: 3px;
+  }
+
+  &__description-item--half {
+    @include animated-background;
+    width: 135px;
+    height: 18px;
+    margin-bottom: 3px;
+  }
+
+  &__image {
+    @include animated-background;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  &--persona {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
