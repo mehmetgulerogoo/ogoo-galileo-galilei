@@ -48,6 +48,22 @@ It is actively used in [Nikola Tesla](https://github.com/mehmetgulerogoo/ogoo-ni
 * [Bootstrap](https://getbootstrap.com/)
 * [Gulp.js](https://gulpjs.com/)
 * [SASS](https://sass-lang.com/)
+* [Swiper](https://swiperjs.com/)
+* [Prism.js](https://prismjs.com/)
+  * Theme: Tomorrow Night
+  * Languages:
+    * Markup + HTML + XML + SVG + MathML + SSML + Atom + RSS
+    * CSS
+    * C-like
+    * JavaScript
+    * Pug
+    * React TSX & JSX
+    * SASS(Sass & Scss)
+    * TypeScript
+  * Plugins
+    * Normalize Whitespace
+    * Copy to Clipboard Button
+    * Toolbar
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
