@@ -22,26 +22,33 @@
       transform: rotate(45deg);
     }
 
+    &__selected {
+      display: flex;
+      align-items: center;
+    }
+
+    &__flag {
+      width: 24px;
+      margin-right: 5px;
+    }
+
     ul {
       li {
         padding: 10px;
         border-radius: 4px;
+        display: flex;
+        align-items: center;
       }
 
       li:hover {
         background-color: lighten($primary-color, 40%);
       }
     }
-
   }
 
   &:hover {
     .o-language__popover {
       display: block;
     }
-  }
-
-  .o-icon {
-    margin-right: 10px;
   }
 }
