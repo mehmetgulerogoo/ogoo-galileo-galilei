@@ -24,7 +24,7 @@
   }
 
   &__close-button {
-    position: absolute;
+    position: absolute !important;
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
