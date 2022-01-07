@@ -6,7 +6,7 @@
   &__image {
     width: 60px;
     height: 60px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 30px;
     border: 2px solid $primary-color;
     background-color: lighten($primary-color, 30%);
